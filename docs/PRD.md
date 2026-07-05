@@ -26,6 +26,30 @@
 - 错误率
 - 错题排行
 
+# 第三阶段（技术选型）
+## 前端 Frontend
+- 框架：Next.js
+- 样式：TailwindCSS
+
+## 后端 Backend
+- 框架：FastAPI
+
+## 数据库 Database
+- 第一版：SQLite（满足初期需求）
+- 后期扩容替换：Postgres
+
+## AI 大模型（批改能力）
+可选调用：
+- OpenAI
+- DeepSeek
+- Claude
+
+## OCR 文字识别（作业图片解析）
+- 方案：PaddleOCR
+
+## 文件存储 Storage（作业图片、答案文件）
+- 存储服务：Cloudflare R2
+用途：存放所有上传图片、文档资源
 ## 业务流程
 1. 老师后台创建作业 → 上传标准答案 → 生成专属上传链接
 2. 家长打开链接，填写姓名、上传作业图片并提交
